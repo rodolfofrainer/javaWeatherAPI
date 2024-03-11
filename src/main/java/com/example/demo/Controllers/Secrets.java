@@ -1,6 +1,7 @@
 package com.example.demo.Controllers;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -13,9 +14,12 @@ public class Secrets {
         try (FileInputStream fis = new FileInputStream(PROPERTIES_FILE)) {
             properties.load(fis);
             return properties.getProperty("weather.api.key");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
         } catch (IOException e) {
             e.printStackTrace();
             return null;
-        }
     }
+}
 }

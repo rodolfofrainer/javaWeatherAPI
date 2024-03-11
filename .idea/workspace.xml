@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ac266e-b75c-47e6-9f40-09f5a9bcdc4f" name="Changes" comment="return API call">
+    <list default="true" id="10ac266e-b75c-47e6-9f40-09f5a9bcdc4f" name="Changes" comment="more robust catch clauses">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controllers/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Controllers/APIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controllers/Secrets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Controllers/Secrets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,12 +115,22 @@
       <option name="project" value="LOCAL" />
       <updated>1710159295178</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor code">
+      <option name="closed" value="true" />
+      <created>1710159341584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710159341584</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="return API call" />
-    <option name="LAST_COMMIT_MESSAGE" value="return API call" />
+    <MESSAGE value="refactor code" />
+    <MESSAGE value="more robust catch clauses" />
+    <option name="LAST_COMMIT_MESSAGE" value="more robust catch clauses" />
   </component>
 </project>
