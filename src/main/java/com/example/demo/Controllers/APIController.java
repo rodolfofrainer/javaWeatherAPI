@@ -1,6 +1,7 @@
 package com.example.demo.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,10 +40,10 @@ public class APIController {
         return response.toString();
     }
 
-    @GetMapping("/weather")
-    public String getAPI(){
+    @GetMapping("/weather/{location}")
+    public String getAPI(@PathVariable String location) {
         String apiKey = Secrets.retrieveSecrets();
-        String apiURL = apiKey+"&q=London&aqi=no";
+        String apiURL = "http://api.weatherapi.com/v1/current.json?key="+apiKey+"&q="+location+"&aqi=no";
         return getApiResponse(apiURL);
     }
 }
